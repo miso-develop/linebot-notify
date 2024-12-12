@@ -1,0 +1,42 @@
+{
+	"name": "linebot-notify",
+	"description": "A library for easily sending push notifications to LINE Bot",
+	"version": "1.0.0",
+	"keywords": [
+		"LINE",
+		"Bot",
+		"Notify",
+		"Push"
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/miso-develop/linebot-notify",
+	"bugs": "https://github.com/miso-develop/linebot-notify/issues",
+	"author": "Miso Tanaka <miso.develop@gmail.com>",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"engines": {
+		"node": ">=14.x"
+	},
+	"private": false,
+	"scripts": {
+		"clean": "rimraf dist",
+		"c": "npm run clean",
+		"prebuild": "npm run clean",
+		"build": "npx tsc --sourceMap false --declarationMap false",
+		"b": "npm run build",
+		"prewatch": "npm run clean",
+		"watch": "npx tsc -w",
+		"w": "npm run watch",
+		"update": "npm i && npm audit fix && npm run build",
+		"u": "npm run update",
+		"": ""
+	},
+	"devDependencies": {
+		"@types/node": "^22.9.0",
+		"rimraf": "^6.0.1",
+		"typescript": "^5.6.3"
+	}
+}

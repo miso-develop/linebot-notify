@@ -1,0 +1,16 @@
+{
+  "name": "simple",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "notify": "tsx index.ts"
+  },
+  "license": "MIT",
+  "description": "LINE Bot Notifyを利用してプッシュ通知を送るシンプルなサンプルコードです。",
+  "dependencies": {
+    "linebot-notify": "^1.0.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2"
+  }
+}
